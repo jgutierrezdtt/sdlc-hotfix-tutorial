@@ -6,6 +6,8 @@ on:
 jobs:
   detect:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     if: github.actor != 'github-actions[bot]'
     steps:
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
